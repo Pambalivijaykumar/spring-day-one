@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Setter Injection -->
+    <bean id="user1" class="com.springdayone.User">
+        <property name="userName" value="Vijay"/>
+        <property name="userId" value="24"/>
+    </bean>
+
+    <!-- Constructor Injection -->
+    <bean id="user2" class="com.springdayone.User">
+        <constructor-arg name="userName" value="Vijaykumar"/>
+        <constructor-arg name="userId" value="28"/>
+    </bean>
+
+</beans>
